@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Notes
+
+Developers will need to create a .env file with their own OpenSea API key to run the project locally.
+
 ## Available Scripts
 
 In the project directory, you can run:

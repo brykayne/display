@@ -8,6 +8,7 @@ import NFTCardList from './NFTCardList';
 import DisplayDetails from './DisplayDetails';
 
 
+
 function CreateDisplay() {
     const [currentInput, setCurrentInput] = useState("");
     const [cards, setCards] = useState([]);
@@ -28,7 +29,7 @@ function CreateDisplay() {
             const apiUrl = `https://api.opensea.io/api/v2/chain/${chain}/contract/${address}/nfts/${identifier}`;
     
             const headers = {
-                'X-API-KEY': 'dbfccf66fe42489882e5cd2bb0706944'
+                'X-API-KEY': process.env.REACT_APP_OPENSEA_API_KEY
             };
     
             const response = await axios.get(apiUrl, { headers: headers });
